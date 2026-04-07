@@ -15,7 +15,7 @@ class _CreateProductScreenState extends State<CreateProductScreen> {
   final _titleController = TextEditingController();
   final _priceController = TextEditingController();
   final _descriptionController = TextEditingController();
-  final _categoryController = TextEditingController(text: 'electronic'); // Valor por defecto
+  final _categoryController = TextEditingController(text: 'electronics'); // Valor por defecto
 
   bool _isLoading = false;
 

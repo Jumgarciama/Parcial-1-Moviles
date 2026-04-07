@@ -59,7 +59,7 @@ class ApiService {
     }
   }
 
-  // PUT to update a product (Opcional - Bonificación)
+  // PUT to update a product 
   Future<Product> updateProduct(int id, Product product) async {
     try {
       final response = await http.put(
@@ -78,7 +78,7 @@ class ApiService {
     }
   }
 
-  // DELETE a product (Opcional - Bonificación)
+  // DELETE a product
   Future<void> deleteProduct(int id) async {
     try {
       final response = await http.delete(Uri.parse('$_baseUrl/products/$id'));
