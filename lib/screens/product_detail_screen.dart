@@ -8,7 +8,7 @@ class ProductDetailScreen extends StatelessWidget {
   final int productId;
   final ApiService _apiService = ApiService();
 
-  ProductDetailScreen({Key? key, required this.productId}) : super(key: key);
+  ProductDetailScreen({super.key, required this.productId});
 
   @override
   Widget build(BuildContext context) {

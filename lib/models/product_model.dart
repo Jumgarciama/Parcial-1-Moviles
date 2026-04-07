@@ -27,7 +27,7 @@ class Product {
       description: json['description'],
       category: json['category'],
       image: json['image'],
-      rating: Rating.fromJson(json['rating']),
+      rating: json['rating'] != null ? Rating.fromJson(json['rating']) : Rating(rate: 0, count: 0),
     );
   }
 

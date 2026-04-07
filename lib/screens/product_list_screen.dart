@@ -7,6 +7,8 @@ import 'product_detail_screen.dart';
 import 'create_product_screen.dart';
 
 class ProductListScreen extends StatefulWidget {
+  const ProductListScreen({super.key});
+
   @override
   _ProductListScreenState createState() => _ProductListScreenState();
 }
@@ -103,7 +105,7 @@ class _ProductListScreenState extends State<ProductListScreen> {
 class ProductCard extends StatelessWidget {
   final Product product;
 
-  const ProductCard({Key? key, required this.product}) : super(key: key);
+  const ProductCard({super.key, required this.product});
 
   @override
   Widget build(BuildContext context) {

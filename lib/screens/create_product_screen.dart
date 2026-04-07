@@ -5,6 +5,8 @@ import '../models/product_model.dart';
 import '../services/api_service.dart';
 
 class CreateProductScreen extends StatefulWidget {
+  const CreateProductScreen({super.key});
+
   @override
   _CreateProductScreenState createState() => _CreateProductScreenState();
 }
@@ -125,10 +127,10 @@ class _CreateProductScreenState extends State<CreateProductScreen> {
                       SizedBox(height: 20),
                       ElevatedButton(
                         onPressed: _isLoading ? null : _submitForm,
-                        child: Text('Crear Producto'),
                         style: ElevatedButton.styleFrom(
                           minimumSize: Size(double.infinity, 50),
                         ),
+                        child: Text('Crear Producto'),
                       ),
                     ],
                   ),
